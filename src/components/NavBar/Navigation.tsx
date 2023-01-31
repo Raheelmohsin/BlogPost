@@ -1,22 +1,5 @@
-// import React from "react";
-// import { NavListItems } from "./common/common";
-
-// export default function Navigation() {
-//   return (
-//     <div>
-//       <ul>
-//         {NavListItems.map((item, index) => {
-//           return <li key={index}>{item.item_name}</li>;
-//         })}
-//       </ul>
-//     </div>
-//   );
-// }
-
 import React, { useEffect, useState } from "react";
 import { NavListItems } from "../common/common";
-import { Link } from "react-router-dom";
-import "./navigation.scss";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -66,7 +49,7 @@ function Navbar() {
         </nav>
         <div className="header__content__toggle">
           {!menuOpen ? (
-            <span onClick={menuToggleHandler}>O</span>
+            <span onClick={menuToggleHandler}>Menu</span>
           ) : (
             <span onClick={menuToggleHandler}>X</span>
           )}

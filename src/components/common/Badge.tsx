@@ -1,6 +1,5 @@
 import React from "react";
-import "./common.scss";
-
+import "../../assets/styles/style.css";
 type Props = {
   text: string;
 };
