@@ -1,8 +1,10 @@
 # Blog Post
 
-Clone the code and then run "npm install" for installing node modules
+Clone the code and then run "npm install" for installing node modules.
 
-After taking node modules you need to run command " npm start" to start development server.
+Then run command "npm run build" to create build.
+
+Then run command "npm start" to start development server.
 
 Your server will run on: localhost:9500
 
