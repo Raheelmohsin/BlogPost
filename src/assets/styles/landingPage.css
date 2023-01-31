@@ -1,0 +1,32 @@
+.mainWrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sectionWrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.innerSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftSectionCls {
+  width: 50%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftSectionCls__leftinnerSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+}/*# sourceMappingURL=landingPage.css.map */
