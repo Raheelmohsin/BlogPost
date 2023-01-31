@@ -1,5 +1,4 @@
 import React from "react";
-import "./common.scss";
 
 type Props = {
   authorName: string;

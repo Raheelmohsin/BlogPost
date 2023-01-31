@@ -1,0 +1,18 @@
+.badgeCls {
+  background-color: $blackColor;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: $boldFontWeight;
+  font-size: $miniFontSize;
+  line-height: 12px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  color: $whiteColor;
+}
+
+.separater {
+  border-bottom: 3px $grayColor dotted;
+}
+.topMargin {
+  margin-top: 40px;
+}
