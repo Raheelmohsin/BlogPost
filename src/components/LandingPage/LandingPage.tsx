@@ -6,11 +6,31 @@ import carImgOne from "../../assets/images/car_1.png";
 import postImgTwo from "../../assets/images/img_1.png";
 import Post from "../Post/Post";
 import SmallPost from "../Post/SmallPost";
+import userOne from "../../assets/images/user_2.png";
+import userTwo from "../../assets/images/user_1.png";
+import userThree from "../../assets/images/user_3.png";
+import userFour from "../../assets/images/user_4.png";
+import userFive from "../../assets/images/user_5.png";
+import modeIcon from "../../assets/images/modeIcon.png";
+import menuIcon from "../../assets/images/menuIcon.png";
+import Card from "../Card/Card";
+
 const LandingPage = () => {
   return (
     <div className="mainWrap">
       <div className="sectionWrap">
-        <Logo />
+        <div className="logoWrapp">
+          <div className="menuIconCls">
+            <span className="modeIconCls">
+              <img src={menuIcon} /> Menu
+            </span>
+
+            <img src={modeIcon} />
+          </div>
+
+          <Logo />
+        </div>
+
         <Navigation />
       </div>
       <section>
@@ -19,7 +39,7 @@ const LandingPage = () => {
             <div className="leftSectionCls__leftinnerSection">
               <Post
                 postName="Travel"
-                badgeCls="badgeCls"
+                badgeCls="badgeClsSmall"
                 detailCls="detailCls"
                 details="Louvre Abu Dhabi marks 4th anniversary with world class exhibitions, programming for all"
                 hasMoreDetail={true}
@@ -97,7 +117,40 @@ const LandingPage = () => {
       </section>
       <div className="separater topMargin" />
       <section>
-        <div className="portfolioBg"></div>
+        <div className="portfolioBg">
+          <div className="cardContainer">
+            <Card
+              userImg={userOne}
+              holderName="Vladimir Putin"
+              cardTitleCls="cardTitle"
+              description="Meals on wheels best in the UAE"
+            />
+            <Card
+              userImg={userTwo}
+              holderName="Vladimir Putin"
+              cardTitleCls="cardTitle"
+              description="Meals on wheels best in the UAE"
+            />
+            <Card
+              userImg={userThree}
+              holderName="Vladimir Putin"
+              cardTitleCls="cardTitle"
+              description="Meals on wheels best in the UAE"
+            />
+            <Card
+              userImg={userFour}
+              holderName="Vladimir Putin"
+              cardTitleCls="cardTitle"
+              description="Meals on wheels best in the UAE"
+            />
+            <Card
+              userImg={userFive}
+              holderName="Vladimir Putin"
+              cardTitleCls="cardTitle"
+              description="Meals on wheels best in the UAE"
+            />
+          </div>
+        </div>
       </section>
     </div>
   );

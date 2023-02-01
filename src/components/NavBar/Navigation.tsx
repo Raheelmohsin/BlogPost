@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavListItems } from "../common/common";
-
+import menuIcon from "../../assets/images/menuIcon.png";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
@@ -49,9 +49,14 @@ function Navbar() {
         </nav>
         <div className="header__content__toggle">
           {!menuOpen ? (
-            <span onClick={menuToggleHandler}>Menu</span>
+            <span onClick={menuToggleHandler}>
+              {" "}
+              <img src={menuIcon} />
+            </span>
           ) : (
-            <span onClick={menuToggleHandler}>X</span>
+            <span style={{ color: "#fff" }} onClick={menuToggleHandler}>
+              X
+            </span>
           )}
         </div>
       </div>
