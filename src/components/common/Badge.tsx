@@ -2,12 +2,13 @@ import React from "react";
 import "../../assets/styles/style.css";
 type Props = {
   text: string;
+  badgeClass?: string;
 };
 
-const Badge: React.FC<Props> = ({ text }) => {
+const Badge: React.FC<Props> = ({ text, badgeClass }) => {
   return (
     <>
-      <div className="badgeCls">{text}</div>
+      <div className={badgeClass}>{text}</div>
     </>
   );
 };

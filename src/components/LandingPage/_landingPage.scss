@@ -99,3 +99,92 @@
   width: 100%;
   height: auto;
 }
+.portfolioBg {
+  background-color: $lightYellowColor;
+  padding: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  @include mobile {
+    margin-bottom: 200px;
+  }
+}
+
+.cardWrap {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  @include mobile {
+    width: 100%;
+  }
+}
+.contentWrapper {
+  width: 55%;
+  margin-top: 14px;
+}
+.cardDetailText {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+
+  text-align: center;
+
+  color: #000000;
+}
+.cardTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4px 14px;
+  color: $whiteColor;
+  background: $blackColor;
+  margin: 0 -0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    box-shadow: inset 170px 0 0 0 $tealColor;
+    color: white;
+  }
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.logoWrapp {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.modeIconCls {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  @include mobile {
+    display: none;
+  }
+}
+.menuIconCls {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: $boldFontWeight;
+  font-size: 16px;
+  line-height: 19px;
+  color: $blackColor;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50px;
+}

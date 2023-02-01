@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .badgeCls {
   background-color: $blackColor;
   font-family: "Roboto";
@@ -15,4 +20,8 @@
 }
 .topMargin {
   margin-top: 40px;
+}
+.badgeClsSmall {
+  @extend .badgeCls;
+  width: auto;
 }
